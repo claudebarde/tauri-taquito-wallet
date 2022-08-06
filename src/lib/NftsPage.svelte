@@ -60,7 +60,6 @@
               }
             })
           );
-          console.log(nfts_);
           nfts = [...nfts_.filter(nft => !!nft.metadata)];
         } else {
           throw "No response from TzKT Tokens API";
@@ -144,12 +143,12 @@
                     <Icon class="material-icons" on>favorite</Icon>
                     <Icon class="material-icons">favorite_border</Icon>
                   </IconButton>
-                  <IconButton class="material-icons" title="Share"
-                    >share</IconButton
-                  >
-                  <IconButton class="material-icons" title="More options"
-                    >more_vert</IconButton
-                  >
+                  <IconButton class="material-icons" title="Share">
+                    share
+                  </IconButton>
+                  <IconButton class="material-icons" title="More options">
+                    more_vert
+                  </IconButton>
                 </ActionIcons>
               </Actions>
             </Content>
